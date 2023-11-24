@@ -11,7 +11,7 @@ class TransactionList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-     print("buiild() TransactionList");
+    print("buiild() TransactionList");
     return LayoutBuilder(
       builder: (ctx, constraints) {
         return transactions.isEmpty

@@ -14,7 +14,7 @@ void main() {
     ),
   );
   //if only in potrait mode
-  
+
   // SystemChrome.setPreferredOrientations([
   //   DeviceOrientation.portraitUp,
   //   DeviceOrientation.portraitDown,
@@ -29,10 +29,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         // brightness: Brightness.dark,
-        primarySwatch: Colors.teal,
-        errorColor: Colors.red,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.teal,
+          errorColor: Colors.red,
+        ),
         textTheme: TextTheme(
-          bodyText2: GoogleFonts.poppins(),
+          displayMedium: GoogleFonts
+              .poppins(), // You might want to specify a TextStyle here
         ),
       ),
       debugShowCheckedModeBanner: false,
